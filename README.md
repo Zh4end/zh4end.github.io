@@ -1,3 +1,3 @@
-# zheard.github.io
+# zhaend.github.io
 <b>Personal Blog</b>
-visit: www.zheard.net
+visit: www.zhaend.net
