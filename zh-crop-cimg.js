@@ -234,7 +234,7 @@ if (toggles) {
                         v.value = null;
                         $("#zh-zhaend").removeClass("disabled");
                         $(".cropanh-container").show();
-                        $(".btn-upanh span,.btn-chonanh").html("<i class='fas fa-upload'></i> Otra Alternativa");
+                        $(".btn-upanh span,.btn-chonanh").html("<i class='fas fa-upload'></i> CAMBIAR FOTO");
                     },
                     error: function (err) {
                         console.error('Compression failed:', err);
