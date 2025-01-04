@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Shopping Script Demo';
+	src: url('../fonts/shopping_script_demo.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/shopping_script_demo.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/shopping_script_demo.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/shopping_script_demo.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/shopping_script_demo.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/shopping_script_demo.svg#shopping_script_demo') format('svg'); /* Chrome < 4, Legacy iOS */
+}
