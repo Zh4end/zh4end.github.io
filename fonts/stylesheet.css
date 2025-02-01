@@ -1,1 +1,8 @@
-﻿/* @font-face kit by Fonts2u (https://fonts2u.com) */ @font-face {font-family:"RixLovefool BB_by_El";src:url("KL019.eot?") format("eot"),url("KL019.woff") format("woff"),url("KL019.ttf") format("truetype"),url("KL019.svg#RixLovefoolBB_by_El") format("svg");font-weight:normal;font-style:normal;}
+@font-face {
+    font-family: 'SVN-Lobster';
+    src: url('SVN-Lobster.woff2') format('woff2'),
+        url('SVN-Lobster.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
