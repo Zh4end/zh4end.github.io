@@ -100,7 +100,7 @@ window.onload = function () {
                                     $("#Cimg").attr("src", u)
                                     Clogo = document.getElementById("Cimg").src
                                 }, "image/png", 1);
-                                $("#zhaend-taouser").removeClass("disabled");
+                                $("#zh-zhaend").removeClass("disabled");
                                 if (!b.disabled) {
                                     b.href = m.toDataURL(a)
                                 }
