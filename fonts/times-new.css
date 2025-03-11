@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Times New Zhaend';
+    src: url('Times-New-Zhaend.woff2') format('woff2'),
+        url('Times-New-Zhaend.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
