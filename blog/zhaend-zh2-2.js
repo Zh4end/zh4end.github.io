@@ -1,1 +1,245 @@
-var _0x2db206=_0x4645;(function(_0x3e8f6d,_0xc6a6b3){var _0x1c0a4b=_0x4645,_0x59e365=_0x3e8f6d();while(!![]){try{var _0x1fc5d5=-parseInt(_0x1c0a4b(0xe7))/0x1*(-parseInt(_0x1c0a4b(0xa5))/0x2)+parseInt(_0x1c0a4b(0xf5))/0x3+parseInt(_0x1c0a4b(0xdd))/0x4+-parseInt(_0x1c0a4b(0x105))/0x5+-parseInt(_0x1c0a4b(0xe0))/0x6+-parseInt(_0x1c0a4b(0xd9))/0x7+-parseInt(_0x1c0a4b(0x100))/0x8;if(_0x1fc5d5===_0xc6a6b3)break;else _0x59e365['push'](_0x59e365['shift']());}catch(_0x501342){_0x59e365['push'](_0x59e365['shift']());}}}(_0x35e3,0xd2d62));function _0x35e3(){var _0x2733e7=['button[data-method=\x22scale\x22]','indexOf','3352210LHWSaz','data-target','.zh-out-texta','test','.cropanh','preventDefault','<span\x20class=\x27spinner-border\x20spinner-border-sm\x27></span>\x20Creando\x20foto...','append','className','data-option','.zh-out-text2','replace','split','.zh-in-text0','.zh-in-text3','.zh-in-text2','addClass','2YLdVQa','srcElement','return\x20(function()\x20','scaleX','.btn-chonanh','location','transition','parse','.zh-in-texta','apply','destroy','createElement','hostname','disabled','.cropanh-container','hide','onchange','method','removeClass','body','[wsxFhjqEqXgOzEmIZdSEUBXLHswq]','createObjectURL','getElementById','then','actions','.img-container','show','button[data-method=\x22getCroppedCanvas\x22]','target','URL','.zh-out-text1','html','click','clear','slice','[JHyYSyXyLyyLAkWkXADMHFPLuQfJWWvNORufVYxfRVjXjxWWTYxviiVukDEBvRKEkNyZTTXLAXWO]','rotate','keyCode','value','parentNode','#zh-zhaend','querySelector','src','event','button[data-method=\x22rotate\x22]','onclick','move','Selecciona\x20un\x20archivo\x20de\x20imagen','getAttribute','scaleY','Cropper','charCodeAt','4914693KIdrYc','ready','<i\x20class=\x27fas\x20fa-upload\x27></i>\x20Elige\x20otra\x20foto','\x20disabled','6847532ZPjQrj','head','secondOption','5221458FjDTZs','option','files','.zh-out-text3','val','.zh-out-text0','image/jpeg','1063033dztbak','.img-preview','.zh-in-text1','getContext','message','canvas','</div><div>','log','revokeObjectURL','fillColor','img','data-method','undefined','<input\x20class=\x27cropanh\x20d-none\x27\x20value=\x27\x27>','4942218aSGeuh','prop','inputImage','length','object','JHyYSwyXwwy.zLyhaenyLd.neAtkWk;XzAhDMaenHdbFox.PLbuQlfogsJWpWot.cvNOomRufVYxfRVjXjxWWTYxviiVukDEBvRKEkNyZTTXLAXWO','cropper','input','#cropanh','getCroppedCanvas','scrollTop','10527616HfALqz','onload','setAttribute'];_0x35e3=function(){return _0x2733e7;};return _0x35e3();}var _0x11c612=(function(){var _0x443691=!![];return function(_0x2cb4ac,_0x505025){var _0x2d84b0=_0x443691?function(){var _0x279e61=_0x4645;if(_0x505025){var _0x3d5840=_0x505025[_0x279e61(0xae)](_0x2cb4ac,arguments);return _0x505025=null,_0x3d5840;}}:function(){};return _0x443691=![],_0x2d84b0;};}()),_0x701bf4=_0x11c612(this,function(){var _0x80d523=_0x4645,_0x53d707;try{var _0x351d28=Function(_0x80d523(0xa7)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x53d707=_0x351d28();}catch(_0x8c687a){_0x53d707=window;}var _0x3b5ce2=new RegExp(_0x80d523(0xc8),'g'),_0x246b77=_0x80d523(0xfa)['replace'](_0x3b5ce2,'')[_0x80d523(0x111)](';'),_0x588df7,_0x29bc6b,_0x55730e,_0x4e3b46,_0x557c56=function(_0x2c1dbc,_0xbd9db7,_0x25468f){var _0x1c8bca=_0x80d523;if(_0x2c1dbc[_0x1c8bca(0xf8)]!=_0xbd9db7)return![];for(var _0x506911=0x0;_0x506911<_0xbd9db7;_0x506911++){for(var _0xaf7d07=0x0;_0xaf7d07<_0x25468f[_0x1c8bca(0xf8)];_0xaf7d07+=0x2){if(_0x506911==_0x25468f[_0xaf7d07]&&_0x2c1dbc[_0x1c8bca(0xd8)](_0x506911)!=_0x25468f[_0xaf7d07+0x1])return![];}}return!![];},_0x5069f8=function(_0xfd90b1,_0x1a82a6,_0x3a79fe){return _0x557c56(_0x1a82a6,_0x3a79fe,_0xfd90b1);},_0x227976=function(_0x16ec4e,_0x769684,_0x2144d9){return _0x5069f8(_0x769684,_0x16ec4e,_0x2144d9);},_0x4b9b7a=function(_0x12a380,_0xfcbf4d,_0xb47387){return _0x227976(_0xfcbf4d,_0xb47387,_0x12a380);};for(var _0x454c13 in _0x53d707){if(_0x557c56(_0x454c13,0x8,[0x7,0x74,0x5,0x65,0x3,0x75,0x0,0x64])){_0x588df7=_0x454c13;break;}}for(var _0x2d2ce4 in _0x53d707[_0x588df7]){if(_0x4b9b7a(0x6,_0x2d2ce4,[0x5,0x6e,0x0,0x64])){_0x29bc6b=_0x2d2ce4;break;}}for(var _0x5bee5f in _0x53d707[_0x588df7]){if(_0x227976(_0x5bee5f,[0x7,0x6e,0x0,0x6c],0x8)){_0x55730e=_0x5bee5f;break;}}if(!('~'>_0x29bc6b))for(var _0x945ae0 in _0x53d707[_0x588df7][_0x55730e]){if(_0x5069f8([0x7,0x65,0x0,0x68],_0x945ae0,0x8)){_0x4e3b46=_0x945ae0;break;}}if(!_0x588df7||!_0x53d707[_0x588df7])return;var _0x5d57c3=_0x53d707[_0x588df7][_0x29bc6b],_0x5edf61=!!_0x53d707[_0x588df7][_0x55730e]&&_0x53d707[_0x588df7][_0x55730e][_0x4e3b46],_0x539cfd=_0x5d57c3||_0x5edf61;if(!_0x539cfd)return;var _0x5c1850=![];for(var _0x569213=0x0;_0x569213<_0x246b77[_0x80d523(0xf8)];_0x569213++){var _0x29bc6b=_0x246b77[_0x569213],_0x30d136=_0x29bc6b[0x0]===String['fromCharCode'](0x2e)?_0x29bc6b[_0x80d523(0xc7)](0x1):_0x29bc6b,_0x62d1c9=_0x539cfd[_0x80d523(0xf8)]-_0x30d136[_0x80d523(0xf8)],_0x4496e5=_0x539cfd[_0x80d523(0x104)](_0x30d136,_0x62d1c9),_0x24af8e=_0x4496e5!==-0x1&&_0x4496e5===_0x62d1c9;_0x24af8e&&((_0x539cfd[_0x80d523(0xf8)]==_0x29bc6b['length']||_0x29bc6b[_0x80d523(0x104)]('.')===0x0)&&(_0x5c1850=!![]));}if(!_0x5c1850){var _0x5a1327=new RegExp(_0x80d523(0xb9),'g'),_0x254ede='wsabxoFuhtj:qbElqanXgkOzEmIZdSEUBXLHswq'[_0x80d523(0x110)](_0x5a1327,'');_0x53d707[_0x588df7][_0x55730e]=_0x254ede;}});_0x701bf4();var tvtad='';function _0x4645(_0x9b8aab,_0x74bc47){var _0x46ad32=_0x35e3();return _0x4645=function(_0x701bf4,_0x11c612){_0x701bf4=_0x701bf4-0xa3;var _0x410dde=_0x46ad32[_0x701bf4];return _0x410dde;},_0x4645(_0x9b8aab,_0x74bc47);}$(document)[_0x2db206(0xda)](function(){var _0x56ac37=_0x2db206;if(window[_0x56ac37(0xaa)][_0x56ac37(0xb1)]==zhaendblog){$(_0x56ac37(0xcd))[_0x56ac37(0xa4)](_0x56ac37(0xb2)),$(_0x56ac37(0xde))['append'](xlha);$(_0x56ac37(0xa9))[_0x56ac37(0xf8)]!==0x0&&($('head')[_0x56ac37(0x10c)](cssCrop),$(_0x56ac37(0xb8))['append'](_0x56ac37(0xf4)));var _0x4fc5ed=$(_0x56ac37(0x109)),_0x2986bc=$(_0x56ac37(0xe9)),_0x370a91=$(_0x56ac37(0xa3)),_0x264cbc=$(_0x56ac37(0x113)),_0x4a6b88=$('.zh-in-texta');$('#cropanh')[_0x56ac37(0xc5)](function(){var _0x54ee4a=_0x56ac37;$(_0x54ee4a(0x109))[_0x54ee4a(0xe4)](0x1),_0x1580c5();}),_0x2986bc['on'](_0x56ac37(0xfc),function(){_0x1580c5();}),_0x370a91['on'](_0x56ac37(0xfc),function(){_0x1580c5();}),_0x264cbc['on']('input',function(){_0x1580c5();}),_0x4a6b88['on'](_0x56ac37(0xfc),function(){_0x1580c5();});function _0x1580c5(){var _0x3fec5a=_0x56ac37;if(undefined!==_0x4fc5ed[_0x3fec5a(0xe4)]()&&_0x4fc5ed['val']()[_0x3fec5a(0xf8)]=='')$(_0x3fec5a(0xcd))[_0x3fec5a(0xa4)](_0x3fec5a(0xb2));else{if(undefined!==_0x2986bc[_0x3fec5a(0xe4)]()&&_0x2986bc[_0x3fec5a(0xe4)]()['length']==0x0)$(_0x3fec5a(0xcd))['addClass'](_0x3fec5a(0xb2));else{if(undefined!==_0x370a91[_0x3fec5a(0xe4)]()&&_0x370a91[_0x3fec5a(0xe4)]()[_0x3fec5a(0xf8)]==0x0)$(_0x3fec5a(0xcd))[_0x3fec5a(0xa4)](_0x3fec5a(0xb2));else{if(undefined!==_0x264cbc[_0x3fec5a(0xe4)]()&&_0x264cbc['val']()[_0x3fec5a(0xf8)]==0x0)$('#zh-zhaend')['addClass'](_0x3fec5a(0xb2));else undefined!==_0x4a6b88[_0x3fec5a(0xe4)]()&&_0x4a6b88[_0x3fec5a(0xe4)]()['length']==0x0?$(_0x3fec5a(0xcd))[_0x3fec5a(0xa4)](_0x3fec5a(0xb2)):$(_0x3fec5a(0xcd))[_0x3fec5a(0xb7)](_0x3fec5a(0xb2));}}}}$('#zh-zhaend')[_0x56ac37(0xc5)](function(){var _0x5c8bee=_0x56ac37;$(_0x5c8bee(0xa9))[_0x5c8bee(0xf8)]!==0x0&&$(_0x5c8bee(0xfd))[_0x5c8bee(0xc5)](),$(_0x5c8bee(0xcd))[_0x5c8bee(0xa4)](_0x5c8bee(0xb2))[_0x5c8bee(0xc4)](_0x5c8bee(0x10b)),$('#img-out')[_0x5c8bee(0xb4)](),t0=$(_0x5c8bee(0x112))[_0x5c8bee(0xe4)](),$(_0x5c8bee(0xe5))['html'](t0),t1=$(_0x5c8bee(0xe9))['val'](),$(_0x5c8bee(0xc3))['html'](t1),t2=$(_0x5c8bee(0xa3))[_0x5c8bee(0xe4)](),$(_0x5c8bee(0x10f))[_0x5c8bee(0xc4)](t2),t3=$(_0x5c8bee(0x113))['val'](),$(_0x5c8bee(0xe3))['html'](t3),ta=$(_0x5c8bee(0xad))[_0x5c8bee(0xe4)](),ta&&$(_0x5c8bee(0x107))[_0x5c8bee(0xc4)](ta[_0x5c8bee(0x110)](/\r?\n/g,_0x5c8bee(0xed))),html2canvas(document[_0x5c8bee(0xce)]('.zhaend-main'),{'useCORS':!0x0,'scrollX':0x0,'scrollY':0x0,'width':rongh2,'height':daih2,'scale':0x1,'x':0x0,'y':0x0})[_0x5c8bee(0xbc)](function(_0x960e6c){zhUpload(_0x960e6c);});}),$('.btn-chonanh')[_0x56ac37(0xf8)]!==0x0&&(window[_0x56ac37(0x101)]=function(){var _0x5eb08d=_0x56ac37,_0x3e8cf4=window[_0x5eb08d(0xd7)],_0x12d3ed=window[_0x5eb08d(0xc2)]||window['webkitURL'],_0x3bfe9e=document['querySelector'](_0x5eb08d(0xbe)),_0x3cf678=_0x3bfe9e['getElementsByTagName'](_0x5eb08d(0xf1))['item'](0x0),_0xe05756=document['getElementById'](_0x5eb08d(0xbd)),_0x3edf10={'aspectRatio':tyle,'viewMode':vmode,'preview':_0x5eb08d(0xe8),'autoCrop':!![],'strict':!![],'background':!![],'autoCropArea':0x1},_0x5cc9e9=new _0x3e8cf4(_0x3cf678,_0x3edf10),_0x58bdb3=_0x3cf678['src'],_0x2872c0=_0x5eb08d(0xe6),_0x3c320d;!document[_0x5eb08d(0xb0)](_0x5eb08d(0xec))[_0x5eb08d(0xea)]&&$(_0x5eb08d(0xc0))[_0x5eb08d(0xf6)](_0x5eb08d(0xb2),!![]);typeof document[_0x5eb08d(0xb0)](_0x5eb08d(0xfb))['style'][_0x5eb08d(0xab)]===_0x5eb08d(0xf3)&&($(_0x5eb08d(0xd1))[_0x5eb08d(0xf6)]('disabled',!![]),$(_0x5eb08d(0x103))['prop'](_0x5eb08d(0xb2),!![]));_0xe05756[_0x5eb08d(0xce)]('.docs-buttons')[_0x5eb08d(0xd2)]=function(_0x2b344e){var _0x28a4f6=_0x5eb08d,_0x31821c=_0x2b344e||window[_0x28a4f6(0xd0)],_0x16b22e=_0x31821c['target']||_0x31821c[_0x28a4f6(0xa6)],_0x458a5f,_0x42e524,_0x319a64,_0x100165;if(!_0x5cc9e9)return;while(_0x16b22e!==this){if(_0x16b22e[_0x28a4f6(0xd5)](_0x28a4f6(0xf2)))break;_0x16b22e=_0x16b22e[_0x28a4f6(0xcc)];}if(_0x16b22e===this||_0x16b22e['disabled']||_0x16b22e['className']['indexOf'](_0x28a4f6(0xb2))>-0x1)return;_0x100165={'method':_0x16b22e['getAttribute'](_0x28a4f6(0xf2)),'target':_0x16b22e['getAttribute'](_0x28a4f6(0x106)),'option':_0x16b22e[_0x28a4f6(0xd5)](_0x28a4f6(0x10e))||undefined,'secondOption':_0x16b22e['getAttribute']('data-second-option')||undefined},_0x458a5f=_0x5cc9e9['cropped'];if(_0x100165[_0x28a4f6(0xb6)]){if(typeof _0x100165[_0x28a4f6(0xc1)]!==_0x28a4f6(0xf3)){_0x319a64=document[_0x28a4f6(0xce)](_0x100165[_0x28a4f6(0xc1)]);if(!_0x16b22e['hasAttribute'](_0x28a4f6(0x10e))&&_0x100165[_0x28a4f6(0xc1)]&&_0x319a64)try{_0x100165['option']=JSON[_0x28a4f6(0xac)](_0x319a64[_0x28a4f6(0xcb)]);}catch(_0x5973ec){console[_0x28a4f6(0xee)](_0x5973ec['message']);}}switch(_0x100165[_0x28a4f6(0xb6)]){case _0x28a4f6(0xc9):_0x458a5f&&_0x5cc9e9[_0x28a4f6(0xc6)]();break;case _0x28a4f6(0xfe):try{_0x100165[_0x28a4f6(0xe1)]=JSON[_0x28a4f6(0xac)](_0x100165[_0x28a4f6(0xe1)]);}catch(_0x2a201c){console['log'](_0x2a201c['message']);}_0x2872c0===_0x28a4f6(0xe6)&&(!_0x100165[_0x28a4f6(0xe1)]&&(_0x100165['option']={}),_0x100165['option'][_0x28a4f6(0xf0)]='#fff');break;}_0x42e524=_0x5cc9e9[_0x100165[_0x28a4f6(0xb6)]](_0x100165['option'],_0x100165[_0x28a4f6(0xdf)]);switch(_0x100165['method']){case _0x28a4f6(0xc9):_0x458a5f&&_0x5cc9e9['crop']();break;case _0x28a4f6(0xa8):case _0x28a4f6(0xd6):_0x16b22e[_0x28a4f6(0x102)](_0x28a4f6(0x10e),-_0x100165[_0x28a4f6(0xe1)]);break;case _0x28a4f6(0xfe):_0x42e524&&$('.anhdacat')[_0x28a4f6(0xc4)](_0x42e524);break;case _0x28a4f6(0xaf):_0x5cc9e9=null;_0x3c320d&&(_0x12d3ed[_0x28a4f6(0xef)](_0x3c320d),_0x3c320d='',_0x3cf678[_0x28a4f6(0xcf)]=_0x58bdb3);break;}if(typeof _0x42e524===_0x28a4f6(0xf9)&&_0x42e524!==_0x5cc9e9&&_0x319a64)try{_0x319a64['value']=JSON['stringify'](_0x42e524);}catch(_0x474857){console[_0x28a4f6(0xee)](_0x474857[_0x28a4f6(0xeb)]);}}},document[_0x5eb08d(0xb8)]['onkeydown']=function(_0x5e1d4d){var _0x1adc58=_0x5eb08d,_0x479038=_0x5e1d4d||window[_0x1adc58(0xd0)];if(!_0x5cc9e9||this[_0x1adc58(0xff)]>0x12c)return;switch(_0x479038[_0x1adc58(0xca)]){case 0x25:_0x479038[_0x1adc58(0x10a)](),_0x5cc9e9[_0x1adc58(0xd3)](-0x1,0x0);break;case 0x26:_0x479038[_0x1adc58(0x10a)](),_0x5cc9e9[_0x1adc58(0xd3)](0x0,-0x1);break;case 0x27:_0x479038['preventDefault'](),_0x5cc9e9[_0x1adc58(0xd3)](0x1,0x0);break;case 0x28:_0x479038[_0x1adc58(0x10a)](),_0x5cc9e9['move'](0x0,0x1);break;}},$(_0x5eb08d(0xb3))[_0x5eb08d(0xb4)]();var _0x26470f=document[_0x5eb08d(0xbb)](_0x5eb08d(0xf7));_0x12d3ed?_0x26470f[_0x5eb08d(0xb5)]=function(){var _0x44fca5=_0x5eb08d,_0x13d1d8=this[_0x44fca5(0xe2)],_0x108b5b;_0x5cc9e9&&_0x13d1d8&&_0x13d1d8[_0x44fca5(0xf8)]&&(_0x108b5b=_0x13d1d8[0x0],/^image\/\w+/[_0x44fca5(0x108)](_0x108b5b['type'])?(_0x2872c0=_0x108b5b['type'],_0x3c320d&&_0x12d3ed[_0x44fca5(0xef)](_0x3c320d),_0x3cf678['src']=_0x3c320d=_0x12d3ed[_0x44fca5(0xba)](_0x108b5b),_0x5cc9e9[_0x44fca5(0xaf)](),_0x5cc9e9=new _0x3e8cf4(_0x3cf678,_0x3edf10),_0x26470f[_0x44fca5(0xcb)]=null,$('.cropanh')[_0x44fca5(0xe4)](0x1),_0x1580c5(),$('.cropanh-container')[_0x44fca5(0xbf)](),$('.btn-upanh\x20span,.btn-chonanh')[_0x44fca5(0xc4)](_0x44fca5(0xdb))):window['alert'](_0x44fca5(0xd4)));}:(_0x26470f[_0x5eb08d(0xb2)]=!![],_0x26470f['parentNode'][_0x5eb08d(0x10d)]+=_0x5eb08d(0xdc));});}});
+let tvtad = '';
+// === Script principal sin jQuery, compatible con Bootstrap 5 ===
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Verifica si el dominio actual coincide con el configurado
+  if (window.location.hostname === zhaendblog) {
+
+    // Desactiva botón principal al inicio
+    const btnGenerar = document.querySelector('#zh-zhaend');
+    btnGenerar.classList.add('disabled');
+
+    // Inserta estilos o scripts requeridos
+    // document.head.insertAdjacentHTML('beforeend', xlha);
+
+    // Si existe botón para seleccionar imagen, agrega estilos y campo oculto
+    if (document.querySelector('.btn-chonanh')) {
+      document.head.insertAdjacentHTML('beforeend', cssCrop);
+      document.body.insertAdjacentHTML('beforeend', "<input class='cropanh d-none' value=''>");
+    }
+
+    // === Variables principales ===
+    const cropInput = document.querySelector('.cropanh');
+    const inputText0 = document.querySelector('.zh-in-text0');
+    const inputText1 = document.querySelector('.zh-in-text1');
+    const inputText2 = document.querySelector('.zh-in-text2');
+    const inputText3 = document.querySelector('.zh-in-text3');
+    const inputTextarea = document.querySelector('.zh-in-texta');
+
+    // === Función de validación para habilitar/deshabilitar botón ===
+    function validarCampos() {
+        // Checa si al menos uno tiene contenido
+        const hayTexto = 
+        (cropInput?.value || '').trim() ||
+        (inputText0?.value || '').trim() ||
+        (inputText1?.value || '').trim() ||
+        (inputText2?.value || '').trim() ||
+        (inputText3?.value || '').trim() ||
+        (inputTextarea?.value || '').trim();
+        
+        if (hayTexto) {
+            // Habilita botón y limpia texto dentro
+            btnGenerar.classList.remove('disabled');
+            //btnGenerar.innerHTML = "<i class='fas fa-cut'></i>"; // elimina texto, deja solo el icono
+        } else {
+            // Deshabilita botón y restaura texto original
+            btnGenerar.classList.add('disabled');
+            //btnGenerar.innerHTML = "<i class='fas fa-cut'></i> Crear Placa";
+        }
+    }
+
+    // === Asignar eventos de entrada ===
+    const cropBtn = document.querySelector('#cropanh');
+    if (cropBtn) {
+      cropBtn.addEventListener('click', () => {
+        cropInput.value = 1;
+        validarCampos();
+      });
+    }
+
+    [inputText1, inputText2, inputText3, inputTextarea].forEach(el => {
+      el?.addEventListener('input', validarCampos);
+    });
+
+    // === Acción principal: generar imagen ===
+    btnGenerar.addEventListener('click', function () {
+      if (document.querySelector('.btn-chonanh')) cropBtn?.click();
+
+      btnGenerar.classList.add('disabled');
+      btnGenerar.innerHTML = "<span class='spinner-border spinner-border-sm'></span> Creando foto...";
+
+      const imgOut = document.querySelector('#img-out');
+      if (imgOut) imgOut.style.display = 'none';
+
+      // Copiar los textos al área de salida
+      const textMap = [
+        { input: '.zh-in-text0', output: '.zh-out-text0' },
+        { input: '.zh-in-text1', output: '.zh-out-text1' },
+        { input: '.zh-in-text2', output: '.zh-out-text2' },
+        { input: '.zh-in-text3', output: '.zh-out-text3' },
+        { input: '.zh-in-texta', output: '.zh-out-texta', isArea: true },
+      ];
+
+      textMap.forEach(({ input, output, isArea }) => {
+        const inEl = document.querySelector(input);
+        const outEl = document.querySelector(output);
+        if (inEl && outEl) {
+          outEl.innerHTML = isArea
+            ? inEl.value.replace(/\r?\n/g, '</div><div>')
+            : inEl.value;
+        }
+      });
+
+      // Captura el contenedor con html2canvas
+      html2canvas(document.querySelector('.zhaend-main'), {
+        useCORS: true,
+        scrollX: 0,
+        scrollY: 0,
+        width: rongh2,
+        height: daih2,
+        scale: 1,
+      }).then(canvasFinal => {
+        zhUpload(canvasFinal); // Subir o mostrar imagen generada
+      });
+    });
+
+    // === Inicializar Cropper.js si existe botón de imagen ===
+    if (document.querySelector('.btn-chonanh')) {
+      window.onload = function () {
+        const CropperClass = window.Cropper;
+        const URLClass = window.URL || window.webkitURL;
+        const imgContainer = document.querySelector('.img-container');
+        const imageElement = imgContainer.querySelector('img');
+        const actionsElement = document.getElementById('actions');
+        const cropOptions = {
+          aspectRatio: tyle,
+          viewMode: vmode,
+          preview: '.img-preview',
+          autoCrop: true,
+          strict: true,
+          background: true,
+          autoCropArea: 1,
+        };
+
+        let cropper = new CropperClass(imageElement, cropOptions);
+        const originalSrc = imageElement.src;
+        let imgType = 'image/jpeg';
+        let currentURL;
+
+        // Desactivar funciones si no hay soporte de canvas o transición
+        if (!document.createElement('canvas').getContext) {
+          document.querySelectorAll('button[data-method="getCroppedCanvas"]').forEach(btn => btn.disabled = true);
+        }
+        if (typeof document.createElement('cropper').style.transition === 'undefined') {
+          document.querySelectorAll('button[data-method="rotate"], button[data-method="scale"]').forEach(btn => btn.disabled = true);
+        }
+
+        // === Control de botones de Cropper ===
+        const buttonsContainer = actionsElement.querySelector('.docs-buttons');
+        buttonsContainer.onclick = function (event) {
+          let target = event.target;
+          while (target && !target.getAttribute('data-method')) {
+            target = target.parentNode;
+          }
+          if (!target || target.disabled || target.classList.contains('disabled')) return;
+
+          const method = target.getAttribute('data-method');
+          let option = target.getAttribute('data-option');
+          const secondOption = target.getAttribute('data-second-option');
+          const targetSelector = target.getAttribute('data-target');
+          let targetInput;
+
+          if (targetSelector) targetInput = document.querySelector(targetSelector);
+          if (targetInput && !target.hasAttribute('data-option')) {
+            try { option = JSON.parse(targetInput.value); } catch { }
+          }
+
+          const isCropped = cropper.cropped;
+          if (method === 'rotate' && isCropped) cropper.clear();
+
+          if (method === 'getCroppedCanvas') {
+            try { option = JSON.parse(option); } catch { }
+            if (imgType === 'image/jpeg') {
+              if (!option) option = {};
+              option.fillColor = '#fff';
+            }
+          }
+
+          const result = cropper[method](option, secondOption);
+
+          switch (method) {
+            case 'rotate':
+              if (isCropped) cropper.crop();
+              break;
+            case 'scaleX':
+            case 'scaleY':
+              target.setAttribute('data-option', -option);
+              break;
+            case 'getCroppedCanvas':
+              if (result) document.querySelector('.anhdacat').innerHTML = '';
+              if (result) document.querySelector('.anhdacat').appendChild(result);
+              break;
+            case 'destroy':
+              cropper = null;
+              if (currentURL) {
+                URLClass.revokeObjectURL(currentURL);
+                currentURL = '';
+                imageElement.src = originalSrc;
+              }
+              break;
+          }
+
+          if (typeof result === 'object' && result !== cropper && targetInput) {
+            try { targetInput.value = JSON.stringify(result); } catch { }
+          }
+        };
+
+        // === Mover imagen con teclas de flecha ===
+        document.body.addEventListener('keydown', function (e) {
+          if (!cropper || document.documentElement.scrollTop > 300) return;
+          switch (e.keyCode) {
+            case 37: e.preventDefault(); cropper.move(-1, 0); break;
+            case 38: e.preventDefault(); cropper.move(0, -1); break;
+            case 39: e.preventDefault(); cropper.move(1, 0); break;
+            case 40: e.preventDefault(); cropper.move(0, 1); break;
+          }
+        });
+
+        // Oculta contenedor de recorte inicial
+        const cropContainer = document.querySelector('.cropanh-container');
+        if (cropContainer) cropContainer.style.display = 'none';
+
+        // === Input de imagen ===
+        const imgInput = document.getElementById('inputImage');
+        if (URLClass) {
+          imgInput.addEventListener('change', function () {
+            const files = this.files;
+            if (!files || !files.length) return;
+
+            const file = files[0];
+            if (/^image\/\w+/.test(file.type)) {
+              imgType = file.type;
+              if (currentURL) URLClass.revokeObjectURL(currentURL);
+              imageElement.src = currentURL = URLClass.createObjectURL(file);
+              cropper.destroy();
+              cropper = new CropperClass(imageElement, cropOptions);
+              imgInput.value = '';
+              cropInput.value = 1;
+              validarCampos();
+
+              if (cropContainer) cropContainer.style.display = '';
+              const btnUp = document.querySelector('.btn-upanh span, .btn-chonanh');
+              if (btnUp) btnUp.innerHTML = "<i class='fas fa-upload'></i> Elige otra foto";
+            } else {
+              alert('Selecciona un archivo de imagen');
+            }
+          });
+        } else {
+          imgInput.disabled = true;
+          imgInput.parentNode.classList.add('disabled');
+        }
+      }
+    }
+  }
+});
