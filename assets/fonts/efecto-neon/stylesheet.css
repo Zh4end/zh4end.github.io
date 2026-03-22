@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Game Of Squids';
+    src: url('GameOfSquids.woff2') format('woff2'),
+        url('GameOfSquids.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Planet 37';
+    src: url('Planet37.woff2') format('woff2'),
+        url('Planet37.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pacific Again';
+    src: url('PacificAgain.woff2') format('woff2'),
+        url('PacificAgain.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pacifico Zhaend';
+    src: url('Pacifico.woff2') format('woff2'),
+        url('Pacifico.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
