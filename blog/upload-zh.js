@@ -1,1 +1,163 @@
-$(document).ready(function(){if(window.location.hostname==zhaendblog){$("head").append(cssCrop);$("head").append(jsCrop);$("head").append(jqueryCrop);var b=document.getElementById("Nimg");var e=document.getElementById("Cimg");var d=vitri;$("#zh-zhaend").click(function(){$("#cropanh").click();d=vitri;$("#img-out").hide();$("#zh-zhaend").addClass("disabled").html("<span class='spinner-border spinner-border-sm'></span> "+tdta);setTimeout(function(){i()},200)});function i(){var a=new Image();a.crossOrigin="Anonymous";a.src=markimg;a.onload=function(){var f=new Image();f.crossOrigin="Anonymous";f.src=bgimg;f.onload=function(){c=document.querySelector("canvas"),ctx=c.getContext("2d"),corners=d,step=1;var l,A,E,g,D,n,h,B,s=e.width-1,p=e.height-1;ctx.clearRect(0,0,c.width,c.height);ctx.save();for(y=0;y<p;y+=step){for(x=0;x<s;x+=step){D=q(corners[0],corners[3],y/p);n=q(corners[1],corners[2],y/p);h=q(corners[0],corners[3],(y+step)/p);B=q(corners[1],corners[2],(y+step)/p);l=q(D,n,x/s);A=q(D,n,(x+step)/s);E=q(h,B,(x+step)/s);g=q(h,B,x/s);ctx.drawImage(e,x,y,step,step,l.x,l.y,Math.ceil(Math.max(step,Math.abs(A.x-l.x),Math.abs(g.x-E.x)))+1,Math.ceil(Math.max(step,Math.abs(l.y-g.y),Math.abs(A.y-E.y)))+1)}}if(tadMk=="black"){ctx.save();ctx.globalAlpha=0.3;ctx.fillStyle="#333";ctx.fillRect(0,0,c.width,c.height);ctx.restore()}ctx.globalCompositeOperation="destination-in";ctx.drawImage(a,0,0,c.width,c.height);ctx.restore();ctx.save();ctx.globalCompositeOperation="destination-over";ctx.drawImage(f,0,0,c.width,c.height);ctx.restore();if(b){ctx.save();ctx.globalAlpha=0.5;var r=ctx.createPattern(b,"repeat");ctx.fillStyle=r;ctx.fillRect(0,0,c.width,c.height);ctx.restore()}c.toBlob(function(j){var k=URL.createObjectURL(j);$("#img-out").html("<label class='mt-2'>+Resultado+</label><img src='"+k+"' alt='Edicion de Blog de zhaend' class='img-thumbnail'></img><a href='"+k+"' class='btn btn-block btn-primary mt-2' download='zhaend_"+tenanhxuat+"'><i class='fas fa-cloud-download-alt'></i> +Descargar+</a>");$("#zh-zhaend").removeClass("disabled").html("<i class='fas fa-cut'></i> "+tta);$("#img-out").show()},"image/jpeg");function q(k,j,m){return{x:k.x+(j.x-k.x)*m,y:k.y+(j.y-k.y)*m}}}}}}});
+document.addEventListener("DOMContentLoaded", () => {
+
+    if (window.location.hostname !== zhaendblog) return;
+
+    // ======= Insertar recursos dinámicos ========
+    //if (cssCrop) document.head.insertAdjacentHTML("beforeend", cssCrop);
+    //if (jsCrop) document.head.insertAdjacentHTML("beforeend", jsCrop);
+    //if (jqueryCrop) document.head.insertAdjacentHTML("beforeend", jqueryCrop);
+
+    // ======= Elementos usados ========
+    const b = document.getElementById("Nimg");
+    const e = document.getElementById("Cimg");
+    //let d = vitri;
+
+    const btn = document.getElementById("zh-zhaend");
+    const imgOut = document.getElementById("img-out");
+    const cropInput = document.getElementById("cropanh");
+
+    if (!btn || !imgOut || !cropInput || !e) return; // seguridad
+
+
+    // =====================================================
+    // EVENTO PRINCIPAL
+    // =====================================================
+    btn.addEventListener("click", () => {
+
+        cropInput.click();
+        d = vitri;
+
+        imgOut.style.display = "none";
+
+        btn.classList.add("disabled");
+        btn.innerHTML = `<span class="spinner-border spinner-border-sm"></span> ${tdta}`;
+
+        setTimeout(() => {
+            processImage();
+        }, 200);
+    });
+
+
+    // =====================================================
+    // FUNCIÓN PRINCIPAL DE PROCESAMIENTO
+    // =====================================================
+    function processImage() {
+
+        // Cargar marca
+        const mark = new Image();
+        mark.crossOrigin = "Anonymous";
+        mark.src = markimg;
+
+        mark.onload = () => {
+
+            // Cargar fondo
+            const bg = new Image();
+            bg.crossOrigin = "Anonymous";
+            bg.src = bgimg;
+
+            bg.onload = () => {
+
+                const c = document.querySelector("canvas");
+                const ctx = c.getContext("2d");
+
+                let corners = d;
+                const step = 1;
+                const pW = e.width - 1;
+                const pH = e.height - 1;
+
+                ctx.clearRect(0, 0, c.width, c.height);
+                ctx.save();
+
+                // =========================
+                // ALGORITMO DE DEFORMACIÓN
+                // =========================
+                for (let y = 0; y < pH; y += step) {
+                    for (let x = 0; x < pW; x += step) {
+
+                        const D = interp(corners[0], corners[3], y / pH);
+                        const n = interp(corners[1], corners[2], y / pH);
+                        const h = interp(corners[0], corners[3], (y + step) / pH);
+                        const B = interp(corners[1], corners[2], (y + step) / pH);
+
+                        const l = interp(D, n, x / pW);
+                        const A = interp(D, n, (x + step) / pW);
+                        const E = interp(h, B, (x + step) / pW);
+                        const g = interp(h, B, x / pW);
+
+                        ctx.drawImage(
+                            e,
+                            x, y, step, step,
+                            l.x, l.y,
+                            Math.ceil(Math.max(step, Math.abs(A.x - l.x), Math.abs(g.x - E.x))) + 1,
+                            Math.ceil(Math.max(step, Math.abs(l.y - g.y), Math.abs(A.y - E.y))) + 1
+                        );
+                    }
+                }
+
+                // =========================
+                // FILTRO ZHAENDMK
+                // =========================
+                if (zndMk === "black") {
+                    ctx.save();
+                    ctx.globalAlpha = 0.3;
+                    ctx.fillStyle = "#333";
+                    ctx.fillRect(0, 0, c.width, c.height);
+                    ctx.restore();
+                }
+
+                // Mascara (marca)
+                ctx.globalCompositeOperation = "destination-in";
+                ctx.drawImage(mark, 0, 0, c.width, c.height);
+                ctx.restore();
+
+                // Fondo debajo
+                ctx.save();
+                ctx.globalCompositeOperation = "destination-over";
+                ctx.drawImage(bg, 0, 0, c.width, c.height);
+                ctx.restore();
+
+                // Textura Nimg
+                if (b) {
+                    ctx.save();
+                    ctx.globalAlpha = 0.5;
+                    const pattern = ctx.createPattern(b, "repeat");
+                    ctx.fillStyle = pattern;
+                    ctx.fillRect(0, 0, c.width, c.height);
+                    ctx.restore();
+                }
+
+                // =========================
+                // EXPORTAR COMO BLOB
+                // =========================
+                c.toBlob((blob) => {
+                    const url = URL.createObjectURL(blob);
+
+                    imgOut.innerHTML = `
+                        <label class="mt-2">+Resultado+</label>
+                        <img src="${url}" alt="Edicion de Blog de zhaend" class="img-thumbnail" />
+                        <a href="${url}" class="btn btn-block btn-primary mt-2" download="zhaend_${nombredesc}">
+                            <i class="fas fa-cloud-download-alt"></i> +Descargar+
+                        </a>
+                    `;
+
+                    btn.classList.remove("disabled");
+                    btn.innerHTML = `<i class="fas fa-cut"></i> ${tta}`;
+                    imgOut.style.display = "block";
+
+                }, "image/jpeg");
+
+            };
+        };
+    }
+
+    // =====================================================
+    // INTERPOLACIÓN — MISMA LÓGICA ORIGINAL
+    // =====================================================
+    function interp(a, b, t) {
+        return {
+            x: a.x + (b.x - a.x) * t,
+            y: a.y + (b.y - a.y) * t
+        };
+    }
+
+});
