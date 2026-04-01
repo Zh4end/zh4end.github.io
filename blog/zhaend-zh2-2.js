@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Si existe botón para seleccionar imagen, agrega estilos y campo oculto
     if (document.querySelector('.btn-chonanh')) {
-      document.head.insertAdjacentHTML('beforeend', cssCrop);
+      //document.head.insertAdjacentHTML('beforeend', cssCrop);
       document.body.insertAdjacentHTML('beforeend', "<input class='cropanh d-none' value=''>");
     }
 
