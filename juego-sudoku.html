@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sudoku Pro - Zhaend.Net</title>
+
+    <style>
+        /* =========================
+        BASE
+        ========================= */
+        
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        
+        body {
+        font-family: "Quicksand", sans-serif;
+        background: #f4f7fb;
+        color: #1f2937;
+        }
+        
+        /* =========================
+        UTILITIES
+        ========================= */
+        
+        .hidden {
+        display: none !important;
+        }
+        
+        /* =========================
+        START SCREEN
+        ========================= */
+        
+        .screen {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #2563eb, #1e40af);
+        }
+        
+        .card {
+        background: white;
+        padding: 40px;
+        border-radius: 18px;
+        width: min(420px, 90%);
+        text-align: center;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+        }
+        
+        .card h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        }
+        
+        .card p {
+        opacity: 0.7;
+        margin-bottom: 20px;
+        }
+        
+        /* Difficulty buttons */
+        
+        .difficulty-select {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+        }
+        
+        .level {
+        padding: 12px;
+        border: none;
+        border-radius: 10px;
+        background: #f1f5f9;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.2s;
+        }
+        
+        .level:hover {
+        background: #e2e8f0;
+        transform: scale(1.02);
+        }
+        
+        .primary {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 10px;
+        background: #2563eb;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.2s;
+        }
+        
+        .primary:hover {
+        background: #1d4ed8;
+        }
+        
+        /* =========================
+        TOP BAR
+        ========================= */
+        
+        .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        }
+        
+        #timer {
+        font-size: 1.4rem;
+        font-weight: bold;
+        }
+        
+        #difficultyLabel {
+        font-size: 0.9rem;
+        opacity: 0.7;
+        }
+        
+        /* controls */
+        
+        .controls {
+        display: flex;
+        gap: 10px;
+        }
+        
+        .controls button {
+        border: none;
+        background: #f1f5f9;
+        padding: 8px 12px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.2s;
+        }
+        
+        .controls button:hover {
+        background: #e2e8f0;
+        transform: translateY(-2px);
+        }
+        
+        /* =========================
+        BOARD
+        ========================= */
+        
+        .board-container {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        }
+        
+        table {
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        border-radius: 10px;
+        overflow: hidden;
+        }
+        
+        /* cells */
+        
+        td {
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        border: 1px solid #e5e7eb;
+        cursor: pointer;
+        transition: 0.15s;
+        user-select: none;
+        }
+        
+        /* fixed numbers */
+        td.fixed {
+        background: #f3f4f6;
+        color: #111827;
+        }
+        
+        /* selected cell */
+        td.selected {
+        background: #dbeafe !important;
+        outline: 2px solid #2563eb;
+        }
+        
+        /* correct animation */
+        td.correct {
+        background: #dcfce7;
+        color: #166534;
+        }
+        
+        /* =========================
+        GRID LINES (Sudoku blocks)
+        ========================= */
+        
+        td:nth-child(3n) {
+        border-right: 2px solid #111827;
+        }
+        
+        tr:nth-child(3n) td {
+        border-bottom: 2px solid #111827;
+        }
+        
+        /* =========================
+        NUMPAD
+        ========================= */
+        
+        .numpad {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 20px;
+        }
+        
+        .numpad button {
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 12px;
+        background: white;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+        }
+        
+        .numpad button:hover {
+        transform: scale(1.1);
+        background: #eff6ff;
+        }
+        
+        /* erase button */
+        #erase {
+        background: #fee2e2;
+        color: #991b1b;
+        }
+        
+        /* =========================
+        MODAL
+        ========================= */
+        
+        .modal {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        
+        .modal-content {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        width: 300px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .modal-content h2 {
+        margin-bottom: 10px;
+        }
+        
+        .modal-content button {
+        margin-top: 15px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 10px;
+        background: #2563eb;
+        color: white;
+        cursor: pointer;
+        }
+        
+        /* =========================
+        RESPONSIVE
+        ========================= */
+        
+        @media (max-width: 600px) {
+        
+        td {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+        }
+        
+        .controls {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        }
+        
+        .numpad button {
+        width: 42px;
+        height: 42px;
+        }
+        }
+        
+        
+        
+        
+        
+        
+        td.correct {
+        background: #dcfce7;
+        color: #166534;
+        transform: scale(1.05);
+        transition: 0.2s;
+        }
+        
+        td.wrong {
+        background: #fee2e2;
+        color: #991b1b;
+        animation: shake 0.3s;
+        }
+        
+        @keyframes shake {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-3px); }
+        50% { transform: translateX(3px); }
+        75% { transform: translateX(-3px); }
+        100% { transform: translateX(0); }
+        }
+        
+        
+        .notes-panel {
+        text-align: center;
+        padding: 10px;
+        background: #fff7ed;
+        color: #9a3412;
+        font-weight: 600;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/69b2179d00.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<audio id="soundCorrect" src="https://blog.zhaend.net/sounds/correct.mp3"></audio>
+<audio id="soundWrong" src="https://blog.zhaend.net/sounds/wrong.mp3"></audio>
+<!-- ================= START SCREEN ================= -->
+<div id="startScreen" class="screen">
+
+    <div class="card">
+
+        <h1>🧩 Sudoku Pro</h1>
+        <p>Elige dificultad y comienza</p>
+
+        <div class="difficulty-select">
+
+            <button class="level" data-level="1">🟢 Fácil</button>
+            <button class="level" data-level="2">🟡 Intermedio</button>
+            <button class="level" data-level="3">🔴 Experto</button>
+
+        </div>
+
+        <button id="startGame" class="primary">
+            Iniciar Juego
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ================= GAME APP ================= -->
+<div id="app" class="hidden">
+
+    <!-- HEADER -->
+    <header class="topbar">
+
+        <div class="info">
+            <div id="timer">00:00</div>
+            <div id="difficultyLabel">Dificultad: Fácil</div>
+        </div>
+
+        <div class="controls">
+
+            <button id="newGame">🔄 Nuevo</button>
+            <button id="hint">💡 Pista</button>
+            <button id="restart">↩ Reiniciar</button>
+            <button id="notes">✏ Notas</button>
+
+        </div>
+
+    </header>
+
+    <!-- BOARD -->
+    <main class="board-container">
+
+        <table id="board"></table>
+
+    </main>
+
+    <!-- NUMPAD -->
+    <footer class="numpad">
+        <div id="notesPanel" class="hidden notes-panel">
+            <p>Modo notas activado ✏</p>
+            <small>Selecciona una celda y escribe posibles números</small>
+        </div>
+
+        <button class="num">1</button>
+        <button class="num">2</button>
+        <button class="num">3</button>
+        <button class="num">4</button>
+        <button class="num">5</button>
+        <button class="num">6</button>
+        <button class="num">7</button>
+        <button class="num">8</button>
+        <button class="num">9</button>
+
+        <button id="erase">⌫</button>
+
+    </footer>
+
+</div>
+
+<!-- ================= WIN MODAL ================= -->
+<div id="winModal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <h2>🎉 ¡Sudoku completado!</h2>
+        <p>Buen trabajo 👍</p>
+
+        <button id="playAgain">Jugar otra vez</button>
+
+    </div>
+
+</div>
+
+<script>
+/* Premade grids */
+let beginner1 = [6, 5, 9, "", 1, "", 2, 8, "", 1, "", "", "", 5, "", "", 3, "", 2, "", "", 8, "", "", "", 1, "", "", "", "", 1, 3, 5, "", 7, "", 8, "", "", 9, "", "", "", "", 2, "", "", 3, "", 7, 8, 6, 4, "", 3, "", 2, "", "", 9, "", "", 4, "", "", "", "", "", 1, 8, "", "", "", "", 8, 7, 6, "", "", "", ""];
+let beginner2 = ["", 6, "", "", 7, 2, "", "", 1, 8, "", "", 1, 3, 6, 5, "", "", "", "", 3, 4, "", "", "", "", "", 2, "", "", 6, 5, "", "", 3, "", "", "", 6, "", "", 7, "", 1, "", "", "", "", 2, "", "", 8, 6, 4, 9, "", 7, "", 8, 4, "", "", "", "", "", 8, "", "", 9, "", 7, "", "", "", "", 7, 2, 1, "", 8, 3];
+let beginner3 = ["", "", "", "", "", "", 9, 2, "", 5, 4, "", "", 3, "", 1, "", "", "", "", 8, "", 5, 7, "", "", 4, "", 5, "", "", 8, "", "", "", 3, 9, "", 3, "", 4, 6, 8, "", "", 1, "", "", 3, "", "", "", 4, "", "", 7, "", 4, "", "", "", "", "", 3, 6, 1, "", 7, 9, "", 8, "", "", "", "", "", 6, "", "", 3, 7];
+
+let intermediate1 = ["", "", "", "", "", "", "", "", 2, "", "", "", "", "", "", 9, 4, "", "", "", 3, "", "", "", "", "", 5, "", 9, 2, 3, "", 5, "", 7, 4, 8, 4, "", "", "", "", "", "", "", "", 6, 7, "", 9, 8, "", "", "", "", "", "", 7, "", 6, "", "", "", "", "", "", 9, "", "", "", 2, "", 4, "", 8, 5, "", "", 3, 6, ""];
+let intermediate2 = [4, "", 6, "", "", "", "", 5, 9, "", "", "", "", 4, "", 2, "", "", "", 7, "", "", "", "", "", "", "", "", "", 5, 9, 1, "", "", 6, "", "", 1, 3, "", "", "", 8, 9, 4, "", "", "", 2, "", "", "", "", 1, 5, "", 8, "", "", "", "", "", "", "", "", "", "", 3, "", "", "", 8, "", 4, "", "", 6, "", 1, "", ""];
+let intermediate3 = ["", "", "", "", "", 8, "", 9, "", "", "", 3, "", "", 1, "", "", "", 2, "", "", "", "", 7, 6, "", "", "", "", "", "", 2, "", "", "", "", "", 9, 4, "", 8, "", 2, "", "", 7, 1, "", "", 4, "", 9, "", 5, 1, "", "", 9, "", "", 5, 3, "", 5, 7, "", "", "", "", 8, 4, "", "", "", "", "", "", 6, "", 2, 1];
+
+let expert1 = [9, 5, "", "", "", 1, "", "", 2, 6, 3, "", "", "", "", 1, "", "", "", "", 8, "", 6, "", "", "", 7, "", "", "", "", "", "", 5, "", "", "", 6, 1, 7, "", 9, "", "", "", "", "", 2, "", 4, "", "", "", 8, "", 9, "", "", "", "", "", "", 5, "", 1, "", "", 5, 6, 4, 8, "", "", 8, "", "", 1, 7, "", "", 6];
+let expert2 = ["", 3, 5, "", "", "", "", 7, 6, 6, 4, "", 5, "", 7, "", 1, "", 7, "", "", "", "", "", 4, "", "", 8, "", 3, "", "", 6, "", "", 4, "", 9, "", 3, 4, "", 2, "", "", 4, "", "", 9, "", 1, "", 3, 7, "", "", 4, 2, "", "", "", "", 5, 5, "", "", "", "", "", 3, "", 1, 3, "", "", 6, "", "", "", 4, ""];
+let expert3 = ["", 2, "", 7, 6, "", "", "", 3, "", "", "", "", "", "", 2, "", "", 9, "", 6, "", 2, "", "", 4, "", 8, "", 7, 4, "", "", "", 1, "", "", "", "", 1, "", "", "", "", "", 1, 9, "", 5, 3, "", 6, "", 8, 4, 8, 9, "", "", 1, "", 3, 6, "", "", "", "", 5, 9, "", "", "", 2, 1, "", "", "", "", "", 8, 9];
+
+/* Premade grids solved */
+let beginner1Solved = [6, 5, 9, 3, 1, 4, 2, 8, 7, 1, 8, 7, 6, 5, 2, 4, 3, 9, 2, 3, 4, 8, 9, 7, 5, 1, 6, 4, 2, 6, 1, 3, 5, 9, 7, 8, 8, 7, 1, 9, 4, 6, 3, 5, 2, 5, 9, 3, 2, 7, 8, 6, 4, 1, 3, 1, 2, 5, 8, 9, 7, 6, 4, 7, 6, 5, 4, 2, 1, 8, 9, 3, 9, 4, 8, 7, 6, 3, 1, 2, 5];
+let beginner2Solved = [4, 6, 5, 8, 7, 2, 3, 9, 1, 8, 9, 2, 1, 3, 6, 5, 4, 7, 7, 1, 3, 4, 9, 5, 6, 2, 8, 2, 4, 1, 6, 5, 8, 7, 3, 9, 3, 8, 6, 9, 4, 7, 2, 1, 5, 5, 7, 9, 2, 1, 3, 8, 6, 4, 9, 2, 7, 3, 8, 4, 1, 5, 6, 1, 3, 8, 5, 6, 9, 4, 7, 2, 6, 5, 4, 7, 2, 1, 9, 8, 3];
+let beginner3Solved = [7, 3, 6, 8, 1, 4, 9, 2, 5, 5, 4, 9, 6, 3, 2, 1, 7, 8, 2, 1, 8, 9, 5, 7, 3, 6, 4, 6, 5, 4, 2, 8, 1, 7, 9, 3, 9, 2, 3, 7, 4, 6, 8, 5, 1, 1, 8, 7, 3, 9, 5, 2, 4, 6, 8, 7, 5, 4, 2, 3, 6, 1, 9, 3, 6, 1, 5, 7, 9, 4, 8, 2, 4, 9, 2, 1, 6, 8, 5, 3, 7];
+
+let intermediate1Solved = [6, 8, 4, 1, 5, 9, 7, 3, 2, 7, 5, 1, 8, 3, 2, 9, 4, 6, 9, 2, 3, 6, 7, 4, 1, 8, 5, 1, 9, 2, 3, 6, 5, 8, 7, 4, 8, 4, 5, 2, 1, 7, 6, 9, 3, 3, 6, 7, 4, 9, 8, 2, 5, 1, 2, 3, 9, 7, 4, 6, 5, 1, 8, 5, 1, 6, 9, 8, 3, 4, 2, 7, 4, 7, 8, 5, 2, 1, 3, 6, 9];
+let intermediate2Solved = [4, 3, 6, 1, 2, 8, 7, 5, 9, 9, 5, 1, 7, 4, 6, 2, 8, 3, 8, 7, 2, 3, 5, 9, 4, 1, 6, 7, 8, 5, 9, 1, 4, 3, 6, 2, 2, 1, 3, 6, 7, 5, 8, 9, 4, 6, 9, 4, 2, 8, 3, 5, 7, 1, 5, 2, 8, 4, 9, 1, 6, 3, 7, 1, 6, 7, 5, 3, 2, 9, 4, 8, 3, 4, 9, 8, 6, 7, 1, 2, 5];
+let intermediate3Solved = [6, 4, 7, 5, 3, 8, 1, 9, 2, 9, 5, 3, 2, 6, 1, 4, 7, 8, 2, 8, 1, 4, 9, 7, 6, 5, 3, 8, 6, 5, 7, 2, 9, 3, 1, 4, 3, 9, 4, 1, 8, 5, 2, 6, 7, 7, 1, 2, 6, 4, 3, 9, 8, 5, 1, 2, 8, 9, 7, 4, 5, 3, 6, 5, 7, 6, 3, 1, 2, 8, 4, 9, 4, 3, 9, 8, 5, 6, 7, 2, 1];
+
+let expert1Solved = [9, 5, 4, 3, 7, 1, 8, 6, 2, 6, 3, 7, 8, 9, 2, 1, 5, 4, 1, 2, 8, 5, 6, 4, 9, 3, 7, 8, 4, 9, 6, 2, 3, 5, 7, 1, 5, 6, 1, 7, 8, 9, 2, 4, 3, 3, 7, 2, 1, 4, 5, 6, 9, 8, 2, 9, 6, 4, 3, 8, 7, 1, 5, 7, 1, 3, 2, 5, 6, 4, 8, 9, 4, 8, 5, 9, 1, 7, 3, 2, 6];
+let expert2Solved = [2, 3, 5, 1, 9, 4, 8, 7, 6, 6, 4, 8, 5, 3, 7, 9, 1, 2, 7, 1, 9, 8, 6, 2, 4, 5, 3, 8, 5, 3, 7, 2, 6, 1, 9, 4, 1, 9, 7, 3, 4, 5, 2, 6, 8, 4, 6, 2, 9, 8, 1, 5, 3, 7, 9, 7, 4, 2, 1, 3, 6, 8, 5, 5, 8, 6, 4, 7, 9, 3, 2, 1, 3, 2, 1, 6, 5, 8, 7, 4, 9];
+let expert3Solved = [5, 2, 1, 7, 6, 4, 8, 9, 3, 3, 4, 8, 9, 1, 5, 2, 6, 7, 9, 7, 6, 3, 2, 8, 1, 4, 5, 8, 5, 7, 4, 9, 6, 3, 1, 2, 6, 3, 2, 1, 8, 7, 9, 5, 4, 1, 9, 4, 5, 3, 2, 6, 7, 8, 4, 8, 9, 2, 7, 1, 5, 3, 6, 7, 6, 3, 8, 5, 9, 4, 2, 1, 2, 1, 5, 6, 4, 3, 7, 8, 9];
+
+const App = (() => {
+
+    /* =========================
+       STATE
+    ========================= */
+
+    let state = {
+        board: [],
+        solution: [],
+        selected: null,
+        difficulty: 1,
+        interval: null,
+        time: 0,
+        locked: false
+    };
+
+    const boardEl = document.getElementById("board");
+    const timerEl = document.getElementById("timer");
+    const startScreen = document.getElementById("startScreen");
+    const app = document.getElementById("app");
+    const difficultyLabel = document.getElementById("difficultyLabel");
+
+    /* =========================
+       PUZZLES
+    ========================= */
+
+    const puzzles = {
+        1: {
+            boards: [
+                beginner1, beginner2, beginner3
+            ],
+            solutions: [
+                beginner1Solved, beginner2Solved, beginner3Solved
+            ]
+        },
+        2: {
+            boards: [
+                intermediate1, intermediate2, intermediate3
+            ],
+            solutions: [
+                intermediate1Solved, intermediate2Solved, intermediate3Solved
+            ]
+        },
+        3: {
+            boards: [
+                expert1, expert2, expert3
+            ],
+            solutions: [
+                expert1Solved, expert2Solved, expert3Solved
+            ]
+        }
+    };
+
+    let index = 0;
+
+    /* =========================
+       INIT
+    ========================= */
+
+    function init() {
+        createBoard();
+        bindEvents();
+    }
+
+    /* =========================
+       SOUND EFFECTS
+    ========================= */
+    function playSound(type) {
+        if (type === "ok") {
+            document.getElementById("soundCorrect").play();
+        }
+        if (type === "fail") {
+            document.getElementById("soundWrong").play();
+        }
+    }
+
+    /* =========================
+       TOGGLE NOTES MODE
+    ========================= */
+    function toggleNotes() {
+        state.notesMode = !state.notesMode;
+        const panel = document.getElementById("notesPanel");
+        if (state.notesMode) {
+            panel.classList.remove("hidden");
+        } else {
+            panel.classList.add("hidden");
+        }
+    }
+
+    /* =========================
+       EVENTS
+    ========================= */
+
+    function bindEvents() {
+
+        document.getElementById("startGame")
+            .addEventListener("click", startGame);
+
+        document.getElementById("newGame")
+            .addEventListener("click", newGame);
+
+        document.getElementById("restart")
+            .addEventListener("click", restart);
+
+        document.getElementById("hint")
+            .addEventListener("click", hint);
+
+        document.querySelectorAll(".level")
+            .forEach(btn => {
+                btn.addEventListener("click", () => {
+                    state.difficulty = +btn.dataset.level;
+                });
+            });
+
+        document.querySelectorAll(".num")
+            .forEach(btn => {
+                btn.addEventListener("click", () => {
+                    if (!state.selected) return;
+                    insertNumber(+btn.textContent);
+                });
+            });
+
+        document.getElementById("erase")
+            .addEventListener("click", () => {
+                if (!state.selected) return;
+                clearCell();
+            });
+
+        document.getElementById("playAgain")
+            .addEventListener("click", () => location.reload());
+    }
+
+    /* =========================
+       START GAME
+    ========================= */
+
+    function startGame() {
+
+        startScreen.classList.add("hidden");
+        app.classList.remove("hidden");
+
+        loadPuzzle();
+        startTimer();
+        updateLabel();
+    }
+
+    /* =========================
+       LOAD PUZZLE
+    ========================= */
+
+    function loadPuzzle() {
+
+        const level = state.difficulty;
+
+        const boardSet = puzzles[level].boards;
+        const solSet = puzzles[level].solutions;
+
+        index = Math.floor(Math.random() * boardSet.length);
+
+        state.board = [...boardSet[index]];
+        state.solution = [...solSet[index]];
+
+        render();
+    }
+
+    /* =========================
+       CREATE BOARD
+    ========================= */
+
+    function createBoard() {
+
+        boardEl.innerHTML = "";
+
+        for (let r = 0; r < 9; r++) {
+
+            const row = document.createElement("tr");
+
+            for (let c = 0; c < 9; c++) {
+
+                const cell = document.createElement("td");
+
+                cell.dataset.index = r * 9 + c;
+
+                cell.addEventListener("click", () => select(cell));
+
+                row.appendChild(cell);
+            }
+
+            boardEl.appendChild(row);
+        }
+    }
+
+    /* =========================
+       RENDER
+    ========================= */
+
+    function render() {
+
+        const cells = boardEl.querySelectorAll("td");
+
+        cells.forEach((cell, i) => {
+
+            const val = state.board[i];
+
+            cell.className = "";
+
+            if (val !== "" && val !== 0) {
+                cell.textContent = val;
+                cell.classList.add("fixed");
+            } else {
+                cell.textContent = "";
+            }
+        });
+    }
+
+    /* =========================
+       SELECT CELL
+    ========================= */
+
+    function select(cell) {
+
+        if (cell.classList.contains("fixed")) return;
+
+        document.querySelectorAll("td")
+            .forEach(c => c.classList.remove("selected"));
+
+        state.selected = cell;
+        cell.classList.add("selected");
+    }
+
+    /* =========================
+       INSERT NUMBER (REAL LOGIC)
+    ========================= */
+
+    function insertNumber(num) {
+
+        const i = +state.selected.dataset.index;
+
+        const correct = state.solution[i];
+
+        if (state.notesMode) {
+            // modo notas (no valida)
+            state.selected.textContent += num + " ";
+            return;
+        }
+        
+        if (num === correct) {
+
+            state.board[i] = num;
+            state.selected.textContent = num;
+
+            state.selected.classList.add("correct");
+            playSound("ok"); // 🔊
+
+            setTimeout(() => {
+                state.selected.classList.remove("correct");
+            }, 300);
+
+            checkWin();
+
+        } else {
+
+            state.selected.classList.add("wrong");
+            playSound("fail"); // 🔊
+
+            setTimeout(() => {
+                state.selected.classList.remove("wrong");
+            }, 400);
+        }
+    }
+
+    /* =========================
+       CLEAR CELL
+    ========================= */
+
+    function clearCell() {
+
+        const i = +state.selected.dataset.index;
+
+        state.board[i] = "";
+
+        state.selected.textContent = "";
+    }
+
+    /* =========================
+       HINT (REAL SOLUTION)
+    ========================= */
+
+    function hint() {
+
+        const empty = [];
+
+        state.board.forEach((v, i) => {
+            if (v === "" || v === 0) empty.push(i);
+        });
+
+        if (!empty.length) return;
+
+        const i = empty[Math.floor(Math.random() * empty.length)];
+
+        state.board[i] = state.solution[i];
+
+        render();
+    }
+
+    /* =========================
+       WIN CHECK
+    ========================= */
+
+    function checkWin() {
+
+        if (state.board.every((v, i) => v == state.solution[i])) {
+
+            clearInterval(state.interval);
+
+            document.getElementById("winModal")
+                .classList.remove("hidden");
+        }
+    }
+
+    /* =========================
+       TIMER
+    ========================= */
+
+    function startTimer() {
+
+        clearInterval(state.interval);
+
+        state.time = 0;
+
+        state.interval = setInterval(() => {
+
+            state.time++;
+
+            const m = String(Math.floor(state.time / 60)).padStart(2, "0");
+            const s = String(state.time % 60).padStart(2, "0");
+
+            timerEl.textContent = `${m}:${s}`;
+
+        }, 1000);
+    }
+
+    /* =========================
+       ACTIONS
+    ========================= */
+
+    function newGame() {
+        const confirmExit = confirm(
+            "¿Seguro que quieres salir al menú?\nPerderás el progreso actual."
+        );
+        if (!confirmExit) return;
+    
+        // reset estado
+        clearInterval(state.interval);
+        app.classList.add("hidden");
+        startScreen.classList.remove("hidden");
+    }
+
+    function restart() {
+        loadPuzzle();
+    }
+
+    function updateLabel() {
+
+        const map = {
+            1: "Fácil",
+            2: "Intermedio",
+            3: "Experto"
+        };
+
+        difficultyLabel.textContent =
+            "Dificultad: " + map[state.difficulty];
+    }
+
+    return { init };
+
+})();
+
+/* =========================
+   BOOT
+========================= */
+
+document.addEventListener("DOMContentLoaded", App.init);
+</script>
+
+</body>
+</html>
