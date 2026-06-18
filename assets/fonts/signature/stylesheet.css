@@ -1,0 +1,17 @@
+/* Fuente Melody */
+@font-face {
+    font-family: 'Zhaend Melody';
+    src: url('./melody/MelodySunday.otf') format('opentype');
+    font-display: swap;
+}
+
+/* Fuente Courier New */
+@font-face {
+    font-family: 'Zhaend Courier';
+    src:
+        url('./courier/CourierNewPS-BoldMT.woff2') format('woff2'),
+        url('./courier/CourierNewPS-BoldMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
