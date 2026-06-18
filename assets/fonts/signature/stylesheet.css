@@ -1,7 +1,10 @@
 /* Fuente Melody */
 @font-face {
     font-family: 'Zhaend Melody';
-    src: url('../melody/MelodySunday.otf') format('opentype');
+    src: 
+        url('../melody/MelodySunday.woff2') format('woff2'),
+        url('../melody/MelodySunday.woff') format('woff'),
+        url('../melody/MelodySunday.otf') format('opentype');
     font-display: swap;
 }
 
