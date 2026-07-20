@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Jack Martine';
+  src:
+    url('JackMartine.woff2') format('woff2'),
+    url('JackMartine.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
