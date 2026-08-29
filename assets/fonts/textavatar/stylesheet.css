@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Vesper';
+    src: url('Vesper-Regular.woff2') format('woff2'),
+        url('Vesper-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gerlyonz Jimakes';
+    src: url('Gerlyonz_Jimakes.woff2') format('woff2'),
+        url('Gerlyonz_Jimakes.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ripley Zhaend';
+    src: url('Ripley-Light.woff2') format('woff2'),
+        url('Ripley-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
