@@ -1,6 +1,7 @@
 function trimCanvas(c) {
-    const ctx = c.getContext('2d');
-    const copyCtx = document.createElement('canvas').getContext('2d');
+    const ctx = c.getContext('2d', { willReadFrequently: true });
+    const copyCanvas = document.createElement('canvas');
+    const copyCtx = copyCanvas.getContext('2d', { willReadFrequently: true });
     const { data } = ctx.getImageData(0, 0, c.width, c.height);
 
     let top = null;
