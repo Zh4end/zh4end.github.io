@@ -2,6 +2,7 @@ function trimCanvas(c) {
     const ctx = c.getContext('2d', { willReadFrequently: true });
     const copyCanvas = document.createElement('canvas');
     const copyCtx = copyCanvas.getContext('2d', { willReadFrequently: true });
+
     const { data } = ctx.getImageData(0, 0, c.width, c.height);
 
     let top = null;
@@ -29,17 +30,12 @@ function trimCanvas(c) {
     const width = right - left + 1;
     const height = bottom - top + 1;
 
-    const trimmed = ctx.getImageData(
-        left,
-        top,
-        width,
-        height
-    );
+    const trimmed = ctx.getImageData(left, top, width, height);
 
-    copyCtx.canvas.width = width;
-    copyCtx.canvas.height = height;
+    copyCanvas.width = width;
+    copyCanvas.height = height;
 
     copyCtx.putImageData(trimmed, 0, 0);
 
-    return copyCtx.canvas;
+    return copyCanvas;
 }
