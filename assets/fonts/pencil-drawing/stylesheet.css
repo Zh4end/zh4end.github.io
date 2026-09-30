@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Shopping Script';
+    src: url('../fonts/shopping_script_demo.woff2') format('woff2'),
+         url('../fonts/shopping_script_demo.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crayon Zhaend';
+    src: url('../fonts/DK-Crayon-Crumble.woff2') format('woff2'),
+         url('../fonts/DK-Crayon-Crumble.woff') format('woff');
+    font-display: swap;
+}
+
+.font-script  { font-family: 'Shopping Script', cursive; }
+.font-vintage { font-family: 'Vintage', serif; }
