@@ -7,9 +7,9 @@
     font-display: swap;
 }
 @font-face {
-    font-family: 'Bariol';
-    src: url('../bariol/Bariol.woff2') format('woff2'),
-        url('../bariol/Bariol.woff') format('woff');
+    font-family: 'Zhaend Love';
+    src: url('../utmbanque/UTMBanqueBold.woff2') format('woff2'),
+        url('../utmbanque/UTMBanqueBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
