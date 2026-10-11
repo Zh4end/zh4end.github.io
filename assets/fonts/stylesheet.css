@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Northwell Zhaend';
+    src: url('Northwell-Alt.woff2') format('woff2'),
+        url('Northwell-Alt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Bariol';
+    src: url('../bariol/Bariol.woff2') format('woff2'),
+        url('../bariol/Bariol.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
