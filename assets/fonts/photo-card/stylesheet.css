@@ -8,8 +8,8 @@
 }
 @font-face {
     font-family: 'Zhaend Love';
-    src: url('../utmbanque/UTMBanqueBold.woff2') format('woff2'),
-        url('../utmbanque/UTMBanqueBold.woff') format('woff');
+    src: url('../courier/CourierNewPS-BoldMT.woff2') format('woff2'),
+        url('../courier/CourierNewPS-BoldMT.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
