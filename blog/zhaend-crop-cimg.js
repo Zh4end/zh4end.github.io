@@ -1,1 +1,365 @@
-function _zhaend_0x375b(_0x5214f8,_0x31d5ea){_0x5214f8=_0x5214f8-0x101;const _0x4082c1=_zhaend_0x4082();let _0x375b2b=_0x4082c1[_0x5214f8];return _0x375b2b;}(function(_0x1a3015,_0x2a5b3a){const _0x4ecdfc=_zhaend_0x375b,_0xf15ad=_0x1a3015();while(!![]){try{const _0x43fc63=-parseInt(_0x4ecdfc(0x135))/0x1*(parseInt(_0x4ecdfc(0x169))/0x2)+-parseInt(_0x4ecdfc(0x14a))/0x3*(parseInt(_0x4ecdfc(0x167))/0x4)+parseInt(_0x4ecdfc(0x16a))/0x5*(parseInt(_0x4ecdfc(0x10c))/0x6)+parseInt(_0x4ecdfc(0x152))/0x7+-parseInt(_0x4ecdfc(0x117))/0x8+-parseInt(_0x4ecdfc(0x163))/0x9*(-parseInt(_0x4ecdfc(0x151))/0xa)+-parseInt(_0x4ecdfc(0x106))/0xb*(parseInt(_0x4ecdfc(0x124))/0xc);if(_0x43fc63===_0x2a5b3a)break;else _0xf15ad['push'](_0xf15ad['shift']());}catch(_0x2e1347){_0xf15ad['push'](_0xf15ad['shift']());}}}(_zhaend_0x4082,0x52f87),((()=>{'use strict';const _0x1f4cf4=_zhaend_0x375b;let _0x5a0100={'_0x4191f5':0xf00000,'maxWidth':0xbb8,'maxHeight':0xbb8,'_0x3ee119':0.9,'_0x53308a':[_0x1f4cf4(0x146),_0x1f4cf4(0x154),'image/webp'],'aspectRatio':tyle,'_0x4a9d7d':vmode},_0x3c9a10=(_0xade21,_0x56147a=document)=>_0x56147a[_0x1f4cf4(0x162)+_0x1f4cf4(0x148)](_0xade21),_0x264338=(_0x1b5fd4,_0x462cb2=document)=>_0x462cb2[_0x1f4cf4(0x162)+_0x1f4cf4(0x116)](_0x1b5fd4),_0x523ecc=null,_0x387063=null,_0x497a53=null,_0x534633=0x0;function _0x310bf1(){const _0x2e91d1=_0x1f4cf4;if(window['location'][_0x2e91d1(0x108)]!==zhaendblog)return;let _0x48f17e=_0x3c9a10(_0x2e91d1(0x11f)+'e'),_0x3361a0=_0x3c9a10(_0x2e91d1(0x10d)+'iner\x20img'),_0x1e680c=_0x3c9a10(_0x2e91d1(0x11d)),_0x3fdcec=_0x3c9a10('#cropConta'+_0x2e91d1(0x122)),_0x2d6fd1=_0x3c9a10(_0x2e91d1(0x144));if(!_0x48f17e||!_0x3361a0||!_0x1e680c||_0x2e91d1(0x157)!=typeof window[_0x2e91d1(0x165)])return;function _0x4083c1(_0x407e4b=!0x1){const _0x2aa6c6=_0x2e91d1;_0x264338(_0x2aa6c6(0x161)+_0x2aa6c6(0x155)+_0x2aa6c6(0x15e))[_0x2aa6c6(0x147)](_0x190cf8=>{const _0x384123=_0x2aa6c6;_0x190cf8['innerHTML']=_0x407e4b?_0x384123(0x156)+_0x384123(0x10f)+_0x384123(0x11c)+'-2\x22></i>El'+_0x384123(0x15d)+_0x384123(0x16b):'<i\x20class=\x22'+_0x384123(0x10f)+_0x384123(0x13c)+_0x384123(0x12e)+_0x384123(0x104)+'\x20imagen';});}function _0x27f204(_0x6a41da){const _0x52e095=_0x2e91d1;_0x2d6fd1&&(_0x2d6fd1['disabled']=!_0x6a41da,_0x2d6fd1['classList'][_0x52e095(0x168)]('disabled',!_0x6a41da));}function _0x5e48b3(){const _0x5b310a=_0x2e91d1;_0x523ecc&&(_0x523ecc[_0x5b310a(0x140)](),_0x523ecc=null);}function _0x39a820(){const _0x3c73fa=_0x2e91d1;_0x387063&&(URL[_0x3c73fa(0x11b)+'ctURL'](_0x387063),_0x387063=null);}function _0xf7a2f7(){const _0xc195cb=_0x2e91d1;_0x497a53=null,_0x27f204(!0x1),_0x4083c1(!0x1),window[_0xc195cb(0x128)+_0xc195cb(0x164)](new CustomEvent('zh:image-r'+_0xc195cb(0x11e)));}async function _0xea2b16(_0x41fb11){const _0x18ad16=_0x2e91d1;var _0xa84086;if(!_0x5a0100['_0x53308a'][_0x18ad16(0x120)](_0x41fb11[_0x18ad16(0x13a)]))throw Error('Formato\x20no'+'\x20permitido'+_0x18ad16(0x145)+_0x18ad16(0x12d)+'\x20WebP.');if(_0x41fb11[_0x18ad16(0x129)]>_0x5a0100[_0x18ad16(0x149)])throw Error(_0x18ad16(0x131)+_0x18ad16(0x118)+_0x18ad16(0x13d)+_0x18ad16(0x107));let _0x4c74b7=++_0x534633;_0x5e48b3(),_0xf7a2f7(),_0x39a820();let _0x5475b2=await((_0xa84086=_0x41fb11)[_0x18ad16(0x129)]<=0x500000||_0x18ad16(0x157)!=typeof window[_0x18ad16(0x13b)]?Promise[_0x18ad16(0x101)](_0xa84086):new Promise((_0x1373c5,_0x372066)=>{const _0x1e4f5c=_0x18ad16;new Compressor(_0xa84086,{'maxWidth':_0x5a0100[_0x1e4f5c(0x130)],'maxHeight':_0x5a0100[_0x1e4f5c(0x158)],'_0x3ee119':_0x5a0100[_0x1e4f5c(0x121)],'_0x42c0fc':_0x1373c5,'error':_0x372066});}));_0x4c74b7===_0x534633&&(await new Promise((_0x2344b3,_0x48e90f)=>{const _0x499fac=_0x18ad16;_0x3361a0['onload']=_0x2344b3,_0x3361a0[_0x499fac(0x125)]=()=>{const _0x59fcca=_0x499fac;_0x48e90f(Error(_0x59fcca(0x10e)+_0x59fcca(0x153)+_0x59fcca(0x139)+'a.'));},_0x3361a0[_0x499fac(0x166)]=_0x387063=URL[_0x499fac(0x150)+'ctURL'](_0x5475b2);}),_0x4c74b7===_0x534633&&(_0x523ecc=new Cropper(_0x3361a0,{'aspectRatio':_0x5a0100[_0x18ad16(0x127)+'o'],'_0x4a9d7d':_0x5a0100[_0x18ad16(0x112)],'_0x6a3903':!0x0,'_0x136982':0x1,'_0x31b115':_0x18ad16(0x126)+'a','_0x1b800d':!0x0,'restore':!0x1,'_0x3d8296':!0x0,'_0x4390cc':!0x0,'_0x59d1db':!0x0,'_0x92750d':!0x0,'_0x4e6363':!0x0,'_0x291ff1':!0x0,'_0x14ad11':!0x0}),_0x3fdcec?.[_0x18ad16(0x10b)][_0x18ad16(0x142)]('d-none'),_0x4083c1(!0x0)));}_0x48f17e['addEventLi'+_0x2e91d1(0x123)](_0x2e91d1(0x114),async function(){const _0x16df70=_0x2e91d1;let _0xd9d963=this[_0x16df70(0x12a)]?.[0x0];if(this[_0x16df70(0x143)]='',_0xd9d963)try{await _0xea2b16(_0xd9d963);}catch(_0x307466){alert(_0x307466[_0x16df70(0x137)]);}});let _0x41131b=_0x3c9a10('#photo-edi'+_0x2e91d1(0x119)+'ar');_0x41131b?.[_0x2e91d1(0x115)+_0x2e91d1(0x123)]('click',_0x17e512=>{const _0xc53ae9=_0x2e91d1;let _0x2e236f=_0x17e512['target'][_0xc53ae9(0x14e)]('[data-meth'+_0xc53ae9(0x14f));if(!_0x2e236f||!_0x523ecc)return;let _0xf680c6=_0x2e236f[_0xc53ae9(0x113)][_0xc53ae9(0x15a)],_0x23fd7e=Number(_0x2e236f[_0xc53ae9(0x113)][_0xc53ae9(0x109)]);if([_0xc53ae9(0x105),'scaleX','scaleY',_0xc53ae9(0x12b),_0xc53ae9(0x159)][_0xc53ae9(0x120)](_0xf680c6))try{_0x523ecc[_0xf680c6](_0x23fd7e),(_0xc53ae9(0x13e)===_0xf680c6||'scaleY'===_0xf680c6)&&(_0x2e236f[_0xc53ae9(0x113)]['_0x1ffc31']=String(-_0x23fd7e));}catch(_0xf0900){console[_0xc53ae9(0x12f)](_0xc53ae9(0x14d)+_0xc53ae9(0x12c),_0xf0900);}}),_0x1e680c[_0x2e91d1(0x115)+_0x2e91d1(0x123)](_0x2e91d1(0x14b),()=>{const _0x3cdabe=_0x2e91d1;if(!_0x523ecc){alert('Selecciona'+'\x20una\x20fotog'+_0x3cdabe(0x103)+_0x3cdabe(0x11a));return;}let _0x17bf8c=_0x523ecc[_0x3cdabe(0x110)]({'maxWidth':0xbb8,'maxHeight':0xbb8,'imageSmoothingEnabled':!0x0,'imageSmoothingQuality':_0x3cdabe(0x15b)});if(!_0x17bf8c){alert('No\x20se\x20pudo'+_0x3cdabe(0x15c)+_0x3cdabe(0x15f));return;}_0x497a53=_0x17bf8c,_0x27f204(!0x0),_0x4083c1(!0x0),window[_0x3cdabe(0x128)+_0x3cdabe(0x164)](new CustomEvent('zh:image-r'+_0x3cdabe(0x10a),{'detail':{'canvas':_0x497a53,'source':_0x3cdabe(0x136)}}));let _0x15a99a=_0x3c9a10(_0x3cdabe(0x14c)+'l');_0x15a99a&&window[_0x3cdabe(0x138)]?.[_0x3cdabe(0x133)]&&bootstrap[_0x3cdabe(0x133)][_0x3cdabe(0x134)](_0x15a99a)[_0x3cdabe(0x13f)]();}),window[_0x2e91d1(0x102)]={'_0x247d3d':()=>_0x497a53,'_0x234ec4':()=>!!_0x497a53,'reset'(){_0xf7a2f7(),_0x5e48b3(),_0x39a820();}},_0x27f204(!0x1),_0x4083c1(!0x1),window['addEventLi'+_0x2e91d1(0x123)]('pagehide',()=>{_0x534633++,_0x5e48b3(),_0x39a820();},{'once':!0x0});}_0x1f4cf4(0x160)===document[_0x1f4cf4(0x111)]?document['addEventLi'+_0x1f4cf4(0x123)](_0x1f4cf4(0x141)+_0x1f4cf4(0x132),_0x310bf1,{'once':!0x0}):_0x310bf1();})()));function _zhaend_0x4082(){const _0x4fa100=['_0x4436a8','src','24ggUzRN','toggle','524jpXgNh','15Kfrpys','imagen','resolve','_0x142aa4','rafía\x20prim','eleccionar','rotate','11kAdZuY','15\x20MB.','hostname','_0x1ffc31','eady','classList','1333182NfQXoT','.img-conta','No\x20se\x20pudo','fa-solid\x20f','_0x304225','readyState','_0x4a9d7d','dataset','change','addEventLi','torAll','824960roXzMR','supera\x20el\x20','tor\x20.toolb','ero.','revokeObje','a-image\x20me','#cropped','eset','#inputImag','includes','_0x3ee119','iner','stener','112044dhJfEt','onerror','.img-previ','aspectRati','dispatchEv','size','files','zoom','per:','JPG,\x20PNG\x20o','e-2\x22></i>S','error','maxWidth','La\x20imagen\x20','Loaded','_0x19138a','_0x4151bd','1295NpqeTT','upload','message','_0x525ef1','\x20fotografí','type','_0x28b1b8','a-upload\x20m','límite\x20de\x20','scaleX','hide','destroy','DOMContent','remove','value','#zh-zhaend','.\x20Utiliza\x20','image/jpeg','forEach','tor','_0x4191f5','170949XYUTfF','click','#photoModa','Error\x20Crop','closest','od]','createObje','436830snAYbM','822059khLxDm','\x20cargar\x20la','image/png','\x20span,\x20.bt','<i\x20class=\x22','function','maxHeight','reset','method','high','\x20generar\x20e','egir\x20otra\x20','n-zhaend','l\x20recorte.','loading','.btn-upanh','querySelec','72VfYgux','ent'];_zhaend_0x4082=function(){return _0x4fa100;};return _zhaend_0x4082();}
+(() => {
+    "use strict";
+
+    const CONFIG = {
+        maxFileSize: 15 * 1024 * 1024,
+        maxWidth: 3000,
+        maxHeight: 3000,
+        quality: 0.90,
+        allowedTypes: [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+        ],
+        aspectRatio: tyle,
+        viewMode: vmode
+    };
+
+    const $ = (selector, parent = document) => parent.querySelector(selector);
+    const $$ = (selector, parent = document) => parent.querySelectorAll(selector);
+
+    let cropper = null;
+    let imageURL = null;
+    let croppedCanvas = null;
+    let uploadId = 0;
+
+    function init() {
+        if (window.location.hostname !== zhaendblog) return;
+
+        const input = $("#inputImage");
+        const image = $(".img-container img");
+        const cropButton = $("#cropped");
+        const cropContainer = $("#cropContainer");
+        const generateButton = $("#zh-zhaend");
+
+        if (!input || !image || !cropButton) {
+            // console.error("CEREBRO: faltan elementos HTML.");
+            return;
+        }
+
+        if (typeof window.Cropper !== "function") {
+            // console.error("CEREBRO: Cropper.js no está disponible.");
+            return;
+        }
+
+        // ---------------------------------------
+        // ACTUALIZAR BOTONES DE IMAGEN
+        // ---------------------------------------
+        function updateImageButtons(selected = false) {
+            $$(".btn-upanh span, .btn-zhaend").forEach(el => {
+                el.innerHTML = selected
+                    ? '<i class="fa-solid fa-image me-2"></i>Elegir otra imagen'
+                    : '<i class="fa-solid fa-upload me-2"></i>Seleccionar imagen';
+            });
+        }
+
+        // ---------------------------------------
+        // ESTADO Y RECURSOS
+        // ---------------------------------------
+
+        function enableGenerate(enabled) {
+            if (!generateButton) return;
+
+            generateButton.disabled = !enabled;
+            generateButton.classList.toggle(
+                "disabled",
+                !enabled
+            );
+        }
+
+        function destroyCropper() {
+            if (cropper) {
+                cropper.destroy();
+                cropper = null;
+            }
+        }
+
+        function revokeImageURL() {
+            if (imageURL) {
+                URL.revokeObjectURL(imageURL);
+                imageURL = null;
+            }
+        }
+
+        function reset() {
+            croppedCanvas = null;
+            enableGenerate(false);
+
+            // Restaurar botones.
+            updateImageButtons(false);
+
+            window.dispatchEvent(
+                new CustomEvent("zh:image-reset")
+            );
+        }
+
+        // ---------------------------------------
+        // COMPRESIÓN
+        // ---------------------------------------
+
+        function compress(file) {
+
+            // No comprimir fotografías pequeñas.
+            if (file.size <= 5 * 1024 * 1024) {
+                return Promise.resolve(file);
+            }
+
+            // Continuar sin compresión si la librería no está disponible.
+            if (typeof window.Compressor !== "function") {
+                return Promise.resolve(file);
+            }
+
+            return new Promise((resolve, reject) => {
+
+                new Compressor(file, {
+                    maxWidth: CONFIG.maxWidth,
+                    maxHeight: CONFIG.maxHeight,
+                    quality: CONFIG.quality,
+                    success: resolve,
+                    error: reject
+                });
+
+            });
+        }
+
+        // ---------------------------------------
+        // CARGAR IMAGEN
+        // ---------------------------------------
+
+        async function loadImage(file) {
+
+            if (!CONFIG.allowedTypes.includes(file.type)) {
+                throw new Error("Formato no permitido. Utiliza JPG, PNG o WebP.");
+            }
+
+            if (file.size > CONFIG.maxFileSize) {
+                throw new Error("La imagen supera el límite de 15 MB.");
+            }
+
+            const currentId = ++uploadId;
+
+            destroyCropper();
+            reset();
+            revokeImageURL();
+
+            const compressed = await compress(file);
+
+            if (currentId !== uploadId) return;
+
+            imageURL = URL.createObjectURL(compressed);
+
+            await new Promise((resolve, reject) => {
+
+                image.onload = resolve;
+
+                image.onerror = () => {
+                    reject(new Error("No se pudo cargar la fotografía."));
+                };
+
+                image.src = imageURL;
+
+            });
+
+            if (currentId !== uploadId) return;
+
+            cropper = new Cropper(image, {
+
+                aspectRatio: CONFIG.aspectRatio,
+                viewMode: CONFIG.viewMode,
+
+                autoCrop: true,
+                autoCropArea: 1,
+
+                preview: ".img-previa",
+
+                responsive: true,
+                restore: false,
+                checkOrientation: true,
+
+                movable: true,
+                zoomable: true,
+                rotatable: true,
+                scalable: true,
+
+                cropBoxMovable: true,
+                cropBoxResizable: true
+
+            });
+
+            cropContainer?.classList.remove("d-none");
+            // Cambiar botones al cargar la fotografía.
+            updateImageButtons(true);
+
+        }
+
+        // ---------------------------------------
+        // SELECTOR DE ARCHIVOS
+        // ---------------------------------------
+
+        input.addEventListener("change", async function () {
+
+            const file = this.files?.[0];
+
+            this.value = "";
+
+            if (!file) return;
+
+            try {
+
+                await loadImage(file);
+
+            } catch (error) {
+
+                // console.error("CEREBRO:", error);
+                alert(error.message);
+
+            }
+
+        });
+
+        // ---------------------------------------
+        // CONTROLES CROPPER
+        // ---------------------------------------
+
+        const toolbar = $("#photo-editor .toolbar");
+
+        toolbar?.addEventListener("click", event => {
+
+            const button = event.target.closest("[data-method]");
+
+            if (!button || !cropper) return;
+
+            const method = button.dataset.method;
+
+            const option = Number(button.dataset.option);
+
+            const methods = [
+                "rotate",
+                "scaleX",
+                "scaleY",
+                "zoom",
+                "reset"
+            ];
+
+            if (!methods.includes(method)) return;
+
+            try {
+
+                cropper[method](option);
+
+                if (method === "scaleX" || method === "scaleY") {
+                    button.dataset.option = String(-option);
+                }
+
+            } catch (error) {
+
+                console.error("Error Cropper:", error);
+
+            }
+
+        });
+
+        // ---------------------------------------
+        // APLICAR RECORTE
+        // ---------------------------------------
+
+        cropButton.addEventListener("click", () => {
+
+            if (!cropper) {
+                alert("Selecciona una fotografía primero.");
+                return;
+            }
+
+            const canvas = cropper.getCroppedCanvas({
+
+                maxWidth: 3000,
+                maxHeight: 3000,
+
+                imageSmoothingEnabled: true,
+                imageSmoothingQuality: "high"
+
+            });
+
+            if (!canvas) {
+                alert("No se pudo generar el recorte.");
+                return;
+            }
+
+            croppedCanvas = canvas;
+
+            enableGenerate(true);
+
+            // Actualizar botones.
+            updateImageButtons(true);
+
+            // Entregar fotografía recortada al CORAZÓN.
+            window.dispatchEvent(
+                new CustomEvent("zh:image-ready", {
+                    detail: {
+                        canvas: croppedCanvas,
+                        source: "upload"
+                    }
+                })
+            );
+
+            // Cerrar modal Bootstrap.
+            const modal = $("#photoModal");
+
+            if (modal && window.bootstrap?.Modal) {
+
+                bootstrap.Modal
+                    .getOrCreateInstance(modal)
+                    .hide();
+
+            }
+
+        });
+
+        // ---------------------------------------
+        // API PÚBLICA DEL CEREBRO
+        // ---------------------------------------
+
+        window.ZhaEndImage = {
+
+            getCanvas() {
+                return croppedCanvas;
+            },
+
+            hasImage() {
+                return !!croppedCanvas;
+            },
+
+            reset() {
+                reset();
+                destroyCropper();
+                revokeImageURL();
+            }
+
+        };
+
+        enableGenerate(false);
+        updateImageButtons(false); // new
+
+        // ---------------------------------------
+        // LIMPIEZA
+        // ---------------------------------------
+
+        window.addEventListener("pagehide", () => {
+
+            uploadId++;
+
+            destroyCropper();
+            revokeImageURL();
+
+        }, { once: true });
+
+        // console.info("ZhaEnd: CEREBRO iniciado.");
+
+    }
+
+if (typeof window.Cropper !== "function") {
+    
+    return;
+}
+
+})();
